@@ -1,0 +1,18 @@
+/* Just Some Regular Degular Shmegular Resets */
+html,
+body,
+ul, ol,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+ul, ol{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}

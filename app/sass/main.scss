@@ -1,0 +1,188 @@
+@import 'resets';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* You can Navigate with me if you wanted to */
+nav{
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 100px;
+}
+.focus{
+  margin-left: auto;
+}
+.navbar li {
+  padding: 5px 15px;
+}
+.navbar li a{
+  color: #000;
+}
+
+/* Hero Section */
+.intro-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url('../images/bg.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro h1, .intro p, .intro button {
+  color: #fff;
+}
+.intro h1{
+  font-size: 46px;
+  text-transform: capitalize;
+}
+.intro p{
+  font-size: 24px;
+}
+.intro button {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 15px 35px;
+  border: 2px solid #ededed;
+  border-radius: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+/* Featured */
+.featured-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.featured {
+  margin-top: 120px;
+  width: 80%;
+  display: grid;
+
+  grid-template-columns: repeat(8, 1fr);
+   grid-gap: 10px;
+   grid-template-areas:
+     "a a a a a a b b"
+     "a a a a a a c c"
+     "d d d d e e e e"
+     "d d d d e e e e";
+   align-items: start;
+
+}
+.item-one{
+  height: 100%;
+  grid-area: a;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../images/item-one.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.item-two{
+  height: 100%;
+  grid-area: b;
+  background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../images/item-two.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.item-three{
+  height: 100%;
+  grid-area: c;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../images/item-three.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.item-four{
+  padding: 50px;
+  height: 100%;
+  grid-area: d;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../images/item-four.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.item-five{
+  padding: 50px;
+  height: 100%;
+  grid-area: e;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../images/item-five.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.container {
+  padding: 25px;
+}
+.item .container h2,.item .container p {
+  color:#fff;
+}
+
+
+/* Articles */
+.articles-row {
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img, .column .container {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+footer{
+  margin-top: 100px;
+  background-color: rgba(0,0,0,.9);
+  min-height: 80px;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 150px;
+}
+footer ul li{
+  color:#fff;
+  font-weight: bold;
+  padding: 0px 30px;
+}
